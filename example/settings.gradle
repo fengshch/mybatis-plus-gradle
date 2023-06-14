@@ -1,0 +1,14 @@
+//pluginManagement {
+//    repositories {
+//        maven{
+//            url = uri("../mybatis-plus-gradle-plugin")
+//        }
+//    }
+//}
+//resolutionStrategy {
+//    eachPlugin {
+//        if (requested.id.namespace == 'com.github.fengshch') {
+//            useModule("com.github.fengshch:mybatis-plus-gradle-plugin:${requested.version}")
+//        }
+//    }
+//}

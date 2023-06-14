@@ -1,0 +1,31 @@
+[versions]
+mybatisPlusVersion="3.5.3.1"
+hikariCPVersion="5.0.1"
+snakeYamlVersion="2.0"
+freemarkerVersion="2.3.32"
+postgresqlVersion="42.6.0"
+groovyVersion="4.0.12"
+junitJupiterVersion="5.9.3"
+spockVersion="2.3-groovy-4.0"
+lombokVersion = "1.18.28"
+logbakVersion = "1.4.7"
+
+[libraries]
+mybatisPlus={group ="com.baomidou", name = "mybatis-plus", version.ref = "mybatisPlusVersion"}
+mybatisPlusGenerator={group ="com.baomidou", name = "mybatis-plus-generator", version.ref = "mybatisPlusVersion"}
+lombok={group ="org.projectlombok", name = "lombok", version.ref = "lombokVersion"}
+logbackClassic={group ="ch.qos.logback", name = "logback-classic", version.ref = "logbakVersion"}
+
+hikariCP={group ="com.zaxxer", name = "HikariCP", version.ref = "hikariCPVersion"}
+snakeYaml={group ="org.yaml", name = "snakeyaml", version.ref = "snakeYamlVersion"}
+freekmarker={group ="org.freemarker", name = "freemarker", version.ref = "freemarkerVersion"}
+postgresql={group ="org.postgresql", name = "postgresql", version.ref = "postgresqlVersion"}
+groovy={group ="org.apache.groovy", name = "groovy", version.ref = "groovyVersion"}
+junitJupiter={group ="org.jupiter", name = "jupiter", version.ref = "junitJupiterVersion"}
+junitJupiterApi = {group ="org.junit.jupiter", name = "junit-jupiter-api", version.ref = "junitJupiterVersion"}
+junitJupiterEngine = {group ="org.junit.jupiter", name = "junit-jupiter-engine", version.ref = "junitJupiterVersion"}
+spockCore = {group ="org.spockframework", name = "spock-core", version.ref = "spockVersion"}
+
+[bundles]
+
+[plugins]

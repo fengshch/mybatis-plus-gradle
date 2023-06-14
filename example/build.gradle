@@ -1,0 +1,57 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.github.fengshch:mybatis-plus-gradle-plugin:+"
+        classpath "org.postgresql:postgresql:42.6.0"
+    }
+}
+plugins {
+    id 'java'
+}
+
+apply plugin: 'com.github.fengshch.mybatis-plus-gradle-plugin'
+
+group = "com.github.fengshch"
+version = "0.0.1"
+
+mybatis {
+    configurations {
+        main {
+            parentPackage = "samples"
+            moduleName = "demo"
+//            logicDeleteColumnName = "deleted"
+//            logicDeletePropertyName = "isDeleted"
+//            tableFills = [
+//                    CreateTime: "INSERT",
+//                    ModifyTime: "INSERT_UPDATE",
+//                    DeleteTime: "INSERT"
+//            ] as Map
+//            include = ["company"]
+//            exclude = ["flyway_schema_history","kfszs", "jbqf20180819"]
+//            enableEntityOverride = true
+//            enableMapperOverride = false
+//            enableServiceOverride = false
+//            superClass = "com.github.yulichang.base.MPJBaseMapper"
+//		mapperPackage = "repo"
+//		xmlPackage = "repo.xml"
+//		mapperFileName = "%sRepo"
+//		xmlFileName="%sRepo"
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+//dependencies {
+//    testImplementation platform('org.junit:junit-bom:5.9.1')
+//    testImplementation 'org.junit.jupiter:junit-jupiter'
+//}
+
+test {
+    useJUnitPlatform()
+}
