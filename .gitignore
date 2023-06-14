@@ -4,7 +4,7 @@ gradlet comm
 
 # Ignore Gradle build output directory
 build
-
+lib
 **/HELP.md
 **/.gradle
 **/build/
